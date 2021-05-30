@@ -1,0 +1,199 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide_ver6.0</title>
+
+    <link rel="stylesheet" type="text/css" href="css/destyle.css">
+
+    <style>    
+        .slide_container {width:100%; height:calc(100% - 240px); position:relative; overflow:hidden;}
+
+        .myslide {width:100%; height:100%; background-color:brown;background-size:cover; background-position:center; display:block; position:absolute; top:0; left:100%;}
+        .myslide:first-child {left:0;}
+        .myslide:nth-child(4) {left:-100%;}
+
+        .button_prev {width:46px; height:46px; position:absolute; left:85px; bottom:198px; color:white; background-image:url('img/sprite.png'); background-position: -296px -99px; opacity:0.8; transition:opacity 0.3s;}
+        .button_prev:hover {opacity:1;}
+        .button_next {width:46px; height:46px; position:absolute; right:85px; bottom:198px; color:white; background-image:url('img/sprite.png'); background-position: -346px -99px;  opacity:0.8; transition:opacity 0.3s;}
+        .button_next:hover {opacity:1;}
+
+        h1 {font-size:36px; line-height:46px; font-family:sans-serif; color:white;}
+        p {font-size:15px; line-height:24px; font-family:sans-serif; color:white;}
+
+        .myslide1_bg {width:100%; height:100%; background-image:url(img/img_main_slide1.jpeg); background-size:cover; background-position:center; display:flex; flex-direction:column; justify-content:center; padding:0 150px;}
+        .myslide_title {margin-bottom:20px; font-weight:bold;}
+        .myslide1_bg hr {height:1px; width:calc(100% - 75px); border-top:1px solid white; margin-bottom:20px; position:absolute;}
+        .myslide_subtitle {margin-bottom:20px; position:absolute;}
+        .myslide_subtitle span {font-weight:500;}
+        .slide_smartlens {width:190px; height:36px; position:absolute; background-image:url('img/sprite.png'); background-position:0 -1063px; bottom: 78px; right: 160px;}
+
+        .myslide2_bg {width:100%; height:100%; background-image:url(img/img_main_slide2.jpeg); background-size:cover; background-position:center; display:flex; flex-direction:column; justify-content:center; padding:0 150px;}
+        .myslide2_bg hr {height:1px; width:calc(100% - 75px); border-top:1px solid white; margin-bottom:20px;}
+        .slide_flowerproject {width:190px; height:53px; position:absolute; background-image:url('img/sprite.png'); background-position:-143px -1101px; bottom: 60px; right: 160px;}
+        
+        .myslide3_bg {width:100%; height:100%; background-image:url(img/img_main_slide3.jpeg); background-size:cover; background-position:center; display:flex; flex-direction:column; justify-content:center; padding:0 150px;}
+        .myslide3_bg hr {height:1px; width:calc(100% - 75px); border-top:1px solid white; margin-bottom:20px;}
+        .slide_spacegreen {width:134px; height:50px; position:absolute; background-image:url('img/sprite.png'); background-position:0 -1104px; bottom: 70px; right: 160px;}
+
+        .myslide4_bg {width:100%; height:100%; background-image:url(img/img_main_slide4.jpeg); background-size:cover; background-position:center; display:flex; flex-direction:column; justify-content:center; padding:0 150px;}
+        .myslide4_bg hr {height:1px; width:calc(100% - 75px); border-top:1px solid white; margin-bottom:20px;}
+        .slide_labs {width:168px; height:24px; position:absolute; background-image:url('img/sprite.png'); background-position:-192px -1162px; bottom: 70px; right: 160px;}
+
+        .myslide_textbox {position: absolute; left: 160px; bottom: 170px;}
+        .slide_progressbar_bg {width:calc(100% - 320px); height:1px; border-top:1px solid rgba(255,255,255,0.3); position:absolute; left: 160px; bottom: 221px;}
+        .slide_progressbar {width:25%; height:1px; border-top:1px solid rgba(255,255,255,1); position:absolute; left:0; bottom:0;}
+
+        .slide_num {width:auto; height:auto; font-size:14px; color:white; position:absolute; bottom:100px; left:160px;}
+    </style>
+</head>
+
+<body>
+    <div class="slide_container">
+        <div class="myslide">
+            <div class="myslide1_bg">
+                <div class="myslide_textbox">
+                    <h1 class="myslide_title">삶의 가치를 높이는<br>기술을 연구합니다.</h1>
+                    <p class="myslide_subtitle">당신이 더 가치 있는 일에 몰입할 수 있도록<br>삶을 더 깊이 이해하는 기술을 만들어갑니다.</p><br><br>
+                </div>
+                <a class="slide_smartlens"></a>
+            </div>
+        </div>
+        <div class="myslide">
+            <div class="myslide2_bg">
+                <div class="myslide_textbox">
+                    <h1 class="myslide_title">무한한 가능성과의<br>만남을 기대합니다.</h1>
+                    <p class="myslide_subtitle">당신이 더 가치 있는 일에 몰입할 수 있도록<br>삶을 더 깊이 이해하는 기술을 만들어갑니다.</p><br><br>
+                </div>
+                <a class="slide_flowerproject"></a>
+            </div>
+        </div>
+        <div class="myslide">
+            <div class="myslide3_bg">
+                <div class="myslide_textbox">
+                    <h1 class="myslide_title">더 넓은 세상에서<br>더 큰 미래를 생각합니다.</h1>
+                    <p class="myslide_subtitle">당신이 더 가치 있는 일에 몰입할 수 있도록<br>삶을 더 깊이 이해하는 기술을 만들어갑니다.</p><br><br>
+                </div>
+                <a class="slide_spacegreen"></a>
+            </div>
+        </div>
+        <div class="myslide">
+            <div class="myslide4_bg">
+                <div class="myslide_textbox">
+                    <h1 class="myslide_title">생활환경지능 기술로<br>새로운 연결과 발견의 가능성을 만듭니다.</h1>
+                    <p class="myslide_subtitle">당신이 더 가치 있는 일에 몰입할 수 있도록<br>삶을 더 깊이 이해하는 기술을 만들어갑니다.</p><br><br>
+                </div>
+                <a class="slide_labs"></a>
+            </div>
+        </div>
+        
+        <div class="slide_progressbar_bg">
+            <span class="slide_progressbar" id="current_progressbar"></span>
+        </div>
+
+        <a class="button_prev" onclick="slidePrev()"></a>
+        <a class="button_next" onclick="slideNext()"></a>
+
+        <div class="slide_num">
+            <strong id="slide_current_num">1</strong> | 4
+        </div>
+    </div>
+
+    <script>
+        var slideIndex = 0; //현재 보여지는 슬라이드의 넘버
+        var mySlide = document.getElementsByClassName("myslide");
+        var currentBar = 100 / mySlide.length;
+        var slideInter = setInterval(slideNext, 5000);
+        //window.onload=function() {};
+        function setInterSlide() {
+            slideInter = setInterval(slideNext, 5000);
+        }
+
+        function clearInterSlide() {
+            clearInterval(slideInter);
+        }
+
+        function slidePrev() {
+
+            clearInterSlide();
+
+            if (slideIndex == 0) { //첫번째 슬라이드일 경우
+                mySlide[mySlide.length - 2].style = "left:-100%;";
+                mySlide[0].style = "left:100%; transition:left 0.5s;";
+                mySlide[mySlide.length - 1].style = "left:0px; transition:left 0.5s;";
+            } else if (slideIndex == 1) { //두번째 슬라이드일 경우
+                mySlide[mySlide.length - 1].style = "left:-100%;";
+                mySlide[slideIndex].style = "left:100%; transition:left 0.5s;";
+                mySlide[slideIndex - 1].style = "left:0px; transition:left 0.5s;";
+            }
+            /* 마지막 슬라이드일 경우 > 아래 else에 포함 됌
+            else if (slideIndex == mySlide.length-1) {
+                mySlide[slideIndex-2].style="left:-100%;";
+                mySlide[slideIndex].style="left:100%; transition:left 0.5s;";
+                mySlide[slideIndex - 1].style="left:0px; transition:left 0.5s;";
+            }
+            */
+            else {
+                mySlide[slideIndex - 2].style = "left:-100%;";
+                mySlide[slideIndex].style = "left:100%; transition:left 0.5s;";
+                mySlide[slideIndex - 1].style = "left:0px; transition:left 0.5s;";
+            }
+
+            slideIndex = slideIndex - 1;
+            if (slideIndex < 0) {
+                slideIndex = mySlide.length - 1;
+            }
+
+            currentBar = currentBar - (100 / mySlide.length);
+            if (currentBar <= 0) {
+                currentBar = 100;
+            }
+            document.getElementById("current_progressbar").style.width = currentBar + "%";
+            document.getElementById("slide_current_num").innerHTML = slideIndex + 1;
+
+            //setTimeout (setInterSlide, 500);
+            setInterSlide();
+
+        }
+
+        function slideNext() {
+
+            console.log(mySlide.length); //4가 출력됌 (슬라이드 갯수)
+            clearInterSlide();
+
+            if (slideIndex == 0) {
+                mySlide[mySlide.length - 1].style = "left:100%;"; //다음 다음 스라이드를 오른쪽에 준비 - 4번 슬라이드를 준비
+
+                mySlide[slideIndex].style = "left:-100%; transition:left 0.5s;"; //현재 슬라이드를 왼쪽으로 아웃
+                mySlide[slideIndex + 1].style = "left:0px; transition:left 0.5s;"; //다음 슬라이드를 오른쪽에서 왼쪽으로 인
+            } else if (slideIndex == mySlide.length - 1) { //마지막 슬라이드 일 경우
+                mySlide[slideIndex - 1].style = "left:100%;"; //다음 다음 스라이드를 오른쪽에 준비 - 3번 슬라이드를 준비
+
+                mySlide[slideIndex].style = "left:-100%; transition:left 0.5s;"; //현재 슬라이드를 왼쪽으로 아웃
+                mySlide[0].style = "left:0px; transition:left 0.5s;"; //다음 슬라이드를 오른쪽에서 왼쪽으로 인
+            } else {
+                mySlide[slideIndex - 1].style = "left:100%;"; //다음 다음 스라이드를 오른쪽에 준비 - 2번 슬라이드를 준비
+
+                mySlide[slideIndex].style = "left:-100%; transition:left 0.5s;"; //현재 슬라이드를 왼쪽으로 아웃
+                mySlide[slideIndex + 1].style = "left:0px; transition:left 0.5s;"; //다음 슬라이드를 오른쪽에서 왼쪽으로 인
+            }
+
+            slideIndex = slideIndex + 1;
+            if (slideIndex > mySlide.length - 1) {
+                slideIndex = 0;
+            }
+
+            currentBar = currentBar + (100 / mySlide.length);
+            if (currentBar > 100) {
+                currentBar = 100 / mySlide.length;
+            }
+            document.getElementById("current_progressbar").style.width = currentBar + "%";
+            document.getElementById("slide_current_num").innerHTML = slideIndex + 1;
+
+            //setTimeout (setInterSlide, 500);
+            setInterSlide();
+        }
+    </script>
+</body>
+
+</html>

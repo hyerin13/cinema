@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	min-width:1024px;
+	display:block;
+	font-family:'Noto Sans KR', 'Roboto', 'dotum', 'sans-serif';
+	margin:0;
+	padding:0;
+	overflow-y:scroll;
+}
+
+.header {
+	width:100%;
+	z-index:2;
+}
+
+.main {
+	
+}
+
+.footer {
+	
+}
